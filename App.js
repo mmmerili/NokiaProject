@@ -5,6 +5,7 @@ import { createStackNavigator } from 'react-navigation-stack'
 
 import HomeScreen from './screens/Home';
 import GameScreen from './screens/Game';
+import HighscoreScreen from './screens/Highscore';
 
 
 export default class App extends React.Component {
@@ -19,6 +20,9 @@ const AppNavigator = createStackNavigator({
   },
   Game: {
     screen: GameScreen
+  },
+  Highscore: {
+    screen: HighscoreScreen
   }
 });
 
