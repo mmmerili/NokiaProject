@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Button, View, Text, StyleSheet } from 'react-native';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
-import { BottomMenu, Item } from "react-native-bottom-menu";
+
 
 export default class Homescreen extends Component {
   render() {
@@ -9,8 +8,16 @@ export default class Homescreen extends Component {
       <View styles>
          
           <Button
-          title="Go to Game"
+          title="Go to game"
           onPress={() => this.props.navigation.navigate('Game')}
+/>
+<Button
+          title="Go to scores"
+          onPress={() => this.props.navigation.navigate('Scores')}
+/>
+<Button
+          title="Go to info"
+          onPress={() => this.props.navigation.navigate('Info')}
 />
       </View>
     )

@@ -6,8 +6,8 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 export default class Game extends Component {
   render() {
     return (
-      <View styles>
-        <Text>Game</Text>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Game Screen</Text>
       </View>
     )
   }
