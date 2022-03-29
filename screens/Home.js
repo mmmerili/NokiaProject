@@ -8,8 +8,16 @@ export default class Homescreen extends Component {
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Home Screen</Text>
           <Button
-          title="Go to About"
+          title="Go to game"
           onPress={() => this.props.navigation.navigate('Game')}
+/>
+<Button
+          title="Go to scores"
+          onPress={() => this.props.navigation.navigate('Scores')}
+/>
+<Button
+          title="Go to info"
+          onPress={() => this.props.navigation.navigate('Info')}
 />
       </View>
     )
