@@ -9,7 +9,6 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import HomeScreen from './navigation/screens/HomeScreen';
 import GameScreen from './navigation/screens/GameScreen';
 import ScoresScreen from './navigation/screens/ScoresScreen';
-import InfoScreen from './navigation/screens/InfoScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import Game from './navigation/screens/GameScreen';
 
