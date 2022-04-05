@@ -1,13 +1,32 @@
 # MyCampus-Virtual Interactive-with-location
--Project for Mobileproject TX00CK67-3009 course at Metropolia school of applied science.
+- Project for Mobileproject TX00CK67-3009 course at Metropolia school of applied science.
 
--Team:Merili Ruuto, Miro Hautsalo, Mona Meckelborg and Karim Moubarik.
-# Using the application
+- The customer for this project is Nokia.
 
--Clone our repository
+- Authors Merili Ruuto, Miro Hautsalo, Mona Meckelborg and Karim Moubarik.
 
-  -git clone
+# About the project
+-
 
--Install NPM packages
+-
 
--Run the app
+-
+
+# Installation
+- Clone our repository
+
+```
+git clone https://github.com/mmmerili/NokiaProject.git
+```
+
+- Install NPM packages
+
+```
+npm i
+```
+
+- Run the app
+
+```
+npm start
+```
