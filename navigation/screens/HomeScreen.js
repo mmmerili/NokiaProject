@@ -15,10 +15,6 @@ export default class Homescreen extends Component {
           title="Go to scores"
           onPress={() => this.props.navigation.navigate('Scores')}
 />
-<Button
-          title="Go to info"
-          onPress={() => this.props.navigation.navigate('Info')}
-/>
       </View>
     )
   }
