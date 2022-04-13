@@ -49,7 +49,7 @@ render() {
   return (
       <View style={styles.container}>
         <Text style={styles.teksti}>
-          {GameLoop.score}
+          GameLoop.score.toString
         </Text>
           <GameEngine
         ref={(ref) => { this.engine = ref }}

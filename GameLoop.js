@@ -63,7 +63,6 @@ const GameLoop = (entities, { touches, dispatch, events }) => {
 
             if (head.position[0] === food.position[0] && head.position[1] === food.position[1]){
                 // eating Food
-                score = score + 1;
                 tail.elements = [[food.position[0], food.position[1]]].concat(tail.elements);
 
                 food.position[0] = randomBetween(0, Constants.GRID_SIZE - 1);
@@ -71,7 +70,10 @@ const GameLoop = (entities, { touches, dispatch, events }) => {
                 //score.toString();
                 
             }
-            score = score + 12;
+            for (let i = 0; i < tail.elements.length; i++){
+                score = score + 1
+            }
+            score.toString()
             console.log('score', {score});
         }
     }
@@ -79,5 +81,6 @@ const GameLoop = (entities, { touches, dispatch, events }) => {
 
     return entities;
 };
+
 
 export { GameLoop };
