@@ -1,6 +1,7 @@
 import { addIgnorePatterns } from 'react-native/Libraries/LogBox/Data/LogBoxData';
 import Constants from './Constants';
 
+
 const randomBetween = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -9,7 +10,7 @@ const GameLoop = (entities, { touches, dispatch, events }) => {
     let head = entities.head;
     let food = entities.food;
     let tail = entities.tail;
-
+    let score = 0;
 
     if (events.length){
         for(let i=0; i<events.length; i++){
@@ -41,13 +42,15 @@ const GameLoop = (entities, { touches, dispatch, events }) => {
             dispatch({ type: "game-over" })
         } else {
             // move the tail
-            console.log('Move tail', tail);
             let newTail = [[head.position[0], head.position[1]]];
             tail.elements = newTail.concat(tail.elements).slice(0, -1);
+            //console.log('score', {score});
 
             // snake moves
+
             head.position[0] += head.xspeed;
             head.position[1] += head.yspeed;
+
 
             // check if it hits the tail
             for(let i=0; i<tail.elements.length; i++){
@@ -56,13 +59,20 @@ const GameLoop = (entities, { touches, dispatch, events }) => {
                 }
             }
 
+
+
             if (head.position[0] === food.position[0] && head.position[1] === food.position[1]){
                 // eating Food
+                score = score + 1;
                 tail.elements = [[food.position[0], food.position[1]]].concat(tail.elements);
 
                 food.position[0] = randomBetween(0, Constants.GRID_SIZE - 1);
                 food.position[1] = randomBetween(0, Constants.GRID_SIZE - 1);
+                //score.toString();
+                
             }
+            score = score + 12;
+            console.log('score', {score});
         }
     }
 

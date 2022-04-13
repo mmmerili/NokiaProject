@@ -48,6 +48,9 @@ reset = () => {
 render() {
   return (
       <View style={styles.container}>
+        <Text style={styles.teksti}>
+          {GameLoop.score}
+        </Text>
           <GameEngine
         ref={(ref) => { this.engine = ref }}
         style={{ width: this.boardSize, height: this.boardSize, flex: null, backgroundColor: '#ffffff'}}
@@ -113,5 +116,8 @@ control: {
   width: 100,
   height: 100,
   backgroundColor: 'blue'
+},
+teksti: {
+  color: 'white'
 }
 });
