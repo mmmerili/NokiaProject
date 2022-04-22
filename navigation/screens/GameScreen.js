@@ -1,6 +1,6 @@
 
-import React, { Component } from 'react';
-import { Button, Alert, View, Text, TouchableOpacity } from 'react-native';
+import React, { Component, useState } from 'react';
+import { Button, Alert, View, Text, TouchableOpacity, TextInput } from 'react-native';
 import { GameEngine } from 'react-native-game-engine';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Constants from '../../Constants';
@@ -19,13 +19,24 @@ constructor(props){
   this.state = {
     running: true
   }
+  this.score = 0;
 }
+
 
 randomBetween = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 onEvent = (e) => {
+
+  if(e.type === "eat-food"){
+    this.score = this.score + 1;
+        this.setState({
+          running: true
+        })
+    console.log("score is: "+this.score);
+  }
+
   if (e.type === "game-over"){
     Alert.alert("Game Over");
     this.setState({
@@ -40,6 +51,7 @@ reset = () => {
       food: { position: [this.randomBetween(0, Constants.GRID_SIZE - 1), this.randomBetween(0, Constants.GRID_SIZE - 1)], size: 20, renderer: <Food />},
       tail: { size: 20, elements: [], renderer: <Tail /> }
   });
+  this.score = 0;
   this.setState({
       running: true
   });
@@ -49,7 +61,7 @@ render() {
   return (
       <View style={styles.container}>
         <Text style={styles.teksti}>
-          GameLoop.score.toString
+          Score: {this.score}
         </Text>
           <GameEngine
         ref={(ref) => { this.engine = ref }}
@@ -118,6 +130,9 @@ control: {
   backgroundColor: 'blue'
 },
 teksti: {
+  fontSize: 40,
+  fontWeight: 'bold',
+  margin: 4,
   color: 'white'
 }
 });

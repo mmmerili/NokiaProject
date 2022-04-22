@@ -65,19 +65,19 @@ const GameLoop = (entities, { touches, dispatch, events }) => {
                 // eating Food
                 tail.elements = [[food.position[0], food.position[1]]].concat(tail.elements);
 
+
                 food.position[0] = randomBetween(0, Constants.GRID_SIZE - 1);
                 food.position[1] = randomBetween(0, Constants.GRID_SIZE - 1);
+
                 //score.toString();
+                dispatch({type: "eat-food"});
                 
             }
-            for (let i = 0; i < tail.elements.length; i++){
-                score = score + 1
-            }
+
             score.toString()
-            console.log('score', {score});
+            //console.log('score', score);
         }
     }
-
 
     return entities;
 };
