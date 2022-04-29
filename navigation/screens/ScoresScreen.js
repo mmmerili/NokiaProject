@@ -7,6 +7,9 @@ import { GameScreen } from '../../navigation/screens/GameScreen';
 const Scores = () => (
   <View style={styles.container}>
     <Text style={styles.title}>High Score</Text>
+    <Text style={styles.score}>Name      Campus       Score</Text>
+    <Text style={styles.user}> Markus    Nokia        15</Text>
+    <Text style={styles.user} >Mirka     Metropolia   5</Text>
   </View>
 );
 
@@ -14,20 +17,33 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 24,
-    backgroundColor: "#eaeaea"
+    backgroundColor: "#FFFFFF"
   },
   title: {
     marginTop: 16,
     paddingVertical: 8,
-    borderWidth: 4,
-    borderColor: "#20232a",
-    borderRadius: 6,
-    backgroundColor: "#eaeaea",
+    backgroundColor: "#FFFFFF",
     color: "#20232a",
     textAlign: "center",
     fontSize: 30,
-    fontWeight: "bold"
+  },
+  score: {
+    marginTop: 16,
+    paddingVertical: 8,
+    backgroundColor: "#FFFFFF",
+    color: "#20232a",
+    textAlign: "center",
+    fontSize: 18,
+    fontWeight: 'bold'
+  },
+  user: {
+    marginTop: 16,
+    paddingVertical: 8,
+    backgroundColor: "#FFFFFF",
+    color: "#20232a",
+    textAlign: "center",
+    fontSize: 18,
   }
-});
+  });
 
 export default Scores;

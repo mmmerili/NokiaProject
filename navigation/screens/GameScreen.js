@@ -65,7 +65,7 @@ render() {
         </Text>
           <GameEngine
         ref={(ref) => { this.engine = ref }}
-        style={{ width: this.boardSize, height: this.boardSize, flex: null, backgroundColor: '#ffffff'}}
+        style={{ width: this.boardSize, height: this.boardSize, flex: null, backgroundColor: '#808080',}}
         systems={[ GameLoop ]}
         entities={{
           head: { position: [0, 0], xspeed: 1, yspeed: 0, updateFrequency: 10, nextMove: 10, size: Constants.CELL_SIZE, renderer: <Head /> },
@@ -108,7 +108,7 @@ render() {
 const styles = StyleSheet.create({
 container: {
   flex: 1,
-  backgroundColor: '#000000',
+  backgroundColor: '#FFFFFF',
   alignItems: 'center',
   justifyContent: 'center'
 },
@@ -127,12 +127,11 @@ controlRow: {
 control: {
   width: 100,
   height: 100,
-  backgroundColor: 'blue'
+  backgroundColor: 'black'
 },
 teksti: {
-  fontSize: 40,
-  fontWeight: 'bold',
+  fontSize: 30,
   margin: 4,
-  color: 'white'
+  color: 'black'
 }
 });
