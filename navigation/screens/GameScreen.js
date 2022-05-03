@@ -45,6 +45,7 @@ onEvent = (e) => {
   }
 }
 
+
 reset = () => {
   this.engine.swap({
       head: { position: [0,  0], xspeed: 1, yspeed: 0, nextMove: 10, updateFrequency: 10, size: 20, renderer: <Head />},
@@ -59,6 +60,7 @@ reset = () => {
 
 render() {
   return (
+    
       <View style={styles.container}>
         <Text style={styles.teksti}>
           Score: {this.score}
@@ -101,6 +103,7 @@ render() {
               </View>
           </View>
       </View>
+      
   );
 }
 }
