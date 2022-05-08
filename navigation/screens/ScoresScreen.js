@@ -7,6 +7,8 @@ export default class Scores extends Component {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Scores Screen</Text>
+        <Text>error-not able to show data</Text>
+
       </View>
     )
   }
