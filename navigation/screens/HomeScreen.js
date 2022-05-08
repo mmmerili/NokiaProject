@@ -7,7 +7,7 @@ import { GameScreen } from '../../navigation/screens/GameScreen';
 const Homescreen = () => (
   <View style={styles.container}>
     <Text style={styles.title}>Snake Game</Text>
-    <Text style={styles.info}>Start playing iconic snake game to get the best score of the campus by pressing game button.</Text>
+    <Text style={styles.info}>Start playing iconic snake game to get the best score of the campus by pressing game button. Enjoy! </Text>
     <Text style={styles.nokiaHeder}>Did you know this about Nokia? </Text>
     <Text style={styles.nokia}>In March 2022 we were named for the fifth consecutive year (2018-2022), and the sixth time overall as one of the World’s Most Ethical Companies by Ethisphere. </Text>
   </View>
