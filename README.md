@@ -28,5 +28,5 @@ npm i
 - Run the app
 
 ```
-npm start
+expo start
 ```
