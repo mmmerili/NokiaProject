@@ -6,11 +6,15 @@
 - Authors Merili Ruuto, Miro Hautsalo, Mona Meckelborg and Karim Moubarik.
 
 # About the project
--
 
--
+-	User gets a sense of belonging and better cohesion from playing iconic Nokia snake game against each other on Campus.
 
--
+
+- Interactive monument at Karamalmi campus
+
+- Expo game 
+
+- Application part of the monument
 
 # Installation
 - Clone our repository
@@ -28,5 +32,5 @@ npm i
 - Run the app
 
 ```
-npm start
+expo start
 ```
