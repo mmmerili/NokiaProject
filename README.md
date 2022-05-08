@@ -9,7 +9,8 @@
 
 -	User gets a sense of belonging and better cohesion from playing iconic Nokia snake game against each other on Campus.
 
--Interactive monument at Karamalmi campus
+
+- Interactive monument at Karamalmi campus
 
 - Expo game 
 
