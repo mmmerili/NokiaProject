@@ -4,9 +4,9 @@ import { GameEngine } from 'react-native-game-engine';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Constants from '../../Constants';
 import { StyleSheet } from 'react-native';
-import Head from '../../head';
-import Food from '../../food';
-import Tail from '../../tail';
+import Head from '../../db/game/head';
+import Food from '../../db/game/food';
+import Tail from '../../db/game/tail';
 import { GameLoop } from '../../GameLoop';
 import { StatusBar } from 'expo-status-bar';
 
