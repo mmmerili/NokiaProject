@@ -34,3 +34,5 @@ npm i
 ```
 expo start
 ```
+#credits
+- Thank you to Tamas Szikszai for helpful tutorial on [youtube[(https://www.youtube.com/watch?app=desktop&v=kIe2KHTSJTk). We learned a lot.
